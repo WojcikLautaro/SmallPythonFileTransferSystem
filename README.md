@@ -1,14 +1,14 @@
 # SmallPythonFileTransferSystem
 This project demonstrates a barebones file transfer system using Python's built-in socket module. It consists of a TCP server that serves files from a predefined folder and a client that requests and downloads them.
 
-##Overview
+## Overview
 The server listens on a local IP and waits for incoming client connections.
 
 The client connects to the server, requests a file by name, and downloads it in chunks.
 
 Both server and client use a simple custom protocol: the client sends the file name and chunk size, then receives the file data.
 
-##How to Run
+## How to Run
 Edit server.py to set the correct file path.
 
 Then run: 
@@ -20,12 +20,12 @@ Make sure the client can reach the server at the given IP. In client.py, you can
 Then run: 
   python client.py
 
-##Features
+## Features
 -Simple TCP socket communication.
 -Multithreaded server to handle multiple clients.
 -Custom chunk size for efficient large file transfer.
 
-##Limitations
+## Limitations
 -No encryption or authentication.
 -No error handling for bad file names on the client side.
 -Only supports files in a hardcoded directory.
