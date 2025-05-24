@@ -15,7 +15,7 @@ Then run:
   python server.py
 
 Make sure the client can reach the server at the given IP. In client.py, you can change:
-  file_request = "data.7z"  # replace with the actual file you want
+  file_request = "data.7z"  
 
 Then run: 
   python client.py
